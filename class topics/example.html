@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 400px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button{
+           width: 100%;
+           padding: 6px;
+           margin-top: 4px;
+           box-sizing: border-box;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">
+        User Register Form
+    </h2>
+    <form action="./submit" method="post">
+
+        <!-- Text Input -->
+        <label for="fullname"> Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter the full name" required>
+    
+
+        <!-- Email Input -->
+           <label for="email"> Email</label>
+        <input type="text" id="email" placeholder="Enter the Email" required>
+
+           <!-- Password Input -->
+           <label for="password"> Password</label>
+        <input type="password" id="password" placeholder="Choose the password" required>
+   
+          
+         <!-- Date of birth Input -->
+           <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" >
+  
+         <!-- Age -->
+           <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" >
+
+        <!-- Radio Buttons -->
+         <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male" style="display: inline;"> Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female" style="display: inline;"> Female </label>
+
+
+        <!-- Checkbox -->
+         <label> Skill:</label>
+         <input type="checkbox" id="html" name="skills" value="HTML">
+         <label for="html" style="display: inline;"> HTMl</label>
+         <input type="checkbox" id="css" name="skills" value="CSS">
+         <label for="css" style="display: inline;"> CSS</label>
+         <input type="checkbox" id="js" name="skills" value="JS">
+         <label for="js" style="display: inline;"> JS</label>
+
+         <!-- Select Dropdown -->
+          <label for="country">Select Country:</label>
+          <select name="country" id="country"></select>
+          <option value="">--Choose--</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <option value="usa">USA</option>
+
+          <!-- File Upload -->
+           <label for="resume">Upload Resume</label>
+           <input type="file" name="resume" id="resume">
+
+           <!-- Hidden Field -->
+            <input type="hidden" name="formid" id="userReg123">
+
+            <!-- Clickable Button -->
+             <button type="button" onclick="alert(`button Clicked`)"> Click Me</button>
+
+            <!-- Submit and reset button -->
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+
+
+            </form>
+</body>
+</html>
