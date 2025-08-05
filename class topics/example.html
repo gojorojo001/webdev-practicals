@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
         }
         form {
             width: 400px;
@@ -14,13 +14,13 @@
             border: 1px solid #ccc;
             padding: 20px;
             border-radius: 10px;
-            
+            margin: 0 auto;
         }
-        label{
+        label {
             display: block;
             margin-top: 10px;
         }
-        input, select, textarea, button{
+        input,select,textarea,button{
            width: 100%;
            padding: 6px;
            margin-top: 4px;
@@ -28,7 +28,7 @@
         }
         .buttons {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             margin-top: 15px;
         }
     </style>
@@ -80,11 +80,13 @@
 
          <!-- Select Dropdown -->
           <label for="country">Select Country:</label>
-          <select name="country" id="country"></select>
-          <option value="">--Choose--</option>
+          <select name="country" id="country">
+            <option value="">--Choose--</option>
           <option value="india">India</option>
           <option value="china">China</option>
-          <option value="usa">USA</option>
+          <option value="usa">USA</option> 
+          </select>
+          
 
           <!-- File Upload -->
            <label for="resume">Upload Resume</label>
