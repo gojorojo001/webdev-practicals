@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: blue;
+    font-size: 18px;
+}
+
+.highlight {
+    color: greenyellow;
+    font-size: larger;
+    background-color: black;
+}
+
+#guruji {
+    font-size: x-large;
+    color: darkcyan;
+}
