@@ -1,0 +1,29 @@
+<!-- CLASS BY NEHA MA'AM -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Hello Ma'am
+    </h1>
+    <div id="result">   </div>
+    
+        <script>
+            const x = document.getElementById("result");
+            //Check browser support
+            if(typeof(Storage) !== "undefined") {
+                //Store
+                localStorage.setItem("name", "Neha");
+                //Retrive 
+                x.innerHTML = localStorage.getItem("name");
+            }
+        </script>
+  
+</body>
+</html>
